@@ -1,5 +1,5 @@
-#Maquette ��Fish & Chips�� 
+#Maquette "Fish & Chips" 
 
 
 
-Exercice pour apprendre � utiliser les propri�t�s ��float�� et ��position�� en CSS.
+Exercice pour apprendre à utiliser les propriétés "float" et "position" en CSS.
