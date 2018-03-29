@@ -1,0 +1,136 @@
+@font-face {
+  font-family: "PT";
+  src: url("../fonts/PT_Sans-Narrow-Web-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Open";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #f2f1f4;
+  padding:2%;
+  font-family: 'Open';
+}
+
+a {
+  text-decoration: none;
+}
+
+header a {
+ display: block;
+ text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul a {
+  background-color: #30a894;
+  color: white;
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+  padding: 1.5rem
+}
+
+nav ul a:hover {
+  opacity: 0.8;
+}
+
+h1, h2 {
+  color: #30a894;
+  border-bottom: 1px solid #30a894;
+  font-weight: lighter;
+  padding-bottom: 1.3rem;
+  padding-top: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'PT';
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+}
+
+main p a {
+  color: #49b2b4;
+}
+
+aside {
+  background-color: #b8dcb1;
+  padding: 1.5rem;
+  display: none;
+}
+
+/* LICENCE */
+#licence {
+    display: block;
+    text-align: center;
+    padding: 25px;
+}
+
+#licence img {
+    width: 50px;
+}
+
+/* TABLETTE */
+@media screen and (min-width: 768px) {
+  nav li {
+    display: block;
+  }
+  
+  section, aside {
+    display: block;
+    padding: 25px;
+  }
+  
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  
+  nav ul li{
+    display: inline-block;
+    width: 33%;
+  }
+  
+  main, nav {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  section {
+		width: 69%;
+		display: inline-block;
+		vertical-align: top;
+		padding: 25px 25px 25px 0;
+	}
+
+	aside {
+		display: inline-block;
+		width: 25%;
+	}
+}

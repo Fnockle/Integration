@@ -1,0 +1,162 @@
+@font-face {
+ font-family: sans;
+ src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+ font-family: amaranth;
+ src: url(../fonts/Amaranth-Regular.ttf);
+}
+
+body{
+ font-size: 62.5%;
+ text-align: center;
+ font-family: sans;
+ background-color: #f2f2f2
+;
+}
+
+main {
+ max-width: 1100px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+/*------- SLIDESHOW-------*/
+
+
+.home .slideshow-container {
+ position: relative;
+ margin: auto;
+ margin-bottom: 10px;
+}
+
+.home .dot {
+ cursor: pointer;
+ height: 15px;
+ width: 15px;
+ margin: 0 2px;
+ background-color: #bbb;
+ border-radius: 50%;
+ display: inline-block;
+ transition: background-color 0.6s ease;
+ margin-bottom: 10px;
+}
+
+.home .active, .dot:hover {
+ background-color: #717171
+;
+}
+
+/*------- -------------------*/
+
+
+.home h1 , h2 , h3{
+ font-family: amaranth;
+}
+
+.home h3 , .home p{
+ color: #5f6871
+;
+}
+
+.home h1 , .home h2{
+ color:#98b115
+;
+}
+
+.home section{
+ background-color: #fff;
+}
+
+.home .offres{
+ display: none;
+}
+
+.home .thes article{
+ width: 49%;
+ display: inline-block;
+}
+
+.home p a{
+  text-decoration: none;
+  background-color: #b09067
+;
+  padding: 10px;
+color:rgba(255,255,255, 0.75);
+}
+
+
+/*---- TITLE + BORDER----*/
+
+.home h2 {
+   position: relative;
+   padding-top: 30px;
+ }
+
+ .home h2.border:before {
+   content: "";
+   display: block;
+   border-top: solid 1px #e0e0e0
+;
+   width: 80%;
+   position: absolute;
+   bottom: 17%;
+   margin-left: 10%;
+ }
+
+ .home h2.border span {
+   background: #fff;
+   padding: 0 20px;
+   position: relative;
+ }
+
+/*------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+ .home .offres{
+   display: block;
+ }
+
+.home .offres h3, .home .offres h5{
+ color: #b28f69
+
+}
+
+.home > img{
+ width: 100%;
+}
+
+.home #padding{
+ padding-top: 5px;
+ padding-bottom: 15px;
+}
+
+}
+
+@media screen and (min-width: 1024px){
+
+ .home .thes article{
+   width: 19%;
+ }
+
+ .home .offres{
+   display: block;
+ }
+
+ .home > img{
+   width: 100%;
+ }
+
+ #padding{
+   padding-top: 5px;
+   padding-bottom: 15px;
+ }
+
+.home .cocaïnesniff article{
+ width: 32%;
+ display: inline-block;
+ padding: 5px;
+}
+}

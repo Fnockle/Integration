@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "Bodega";
+  src: url("../fonts/BodegaSans_Black.ttf");
+}
+
+.flex-active {
+  background: red !important;
+}
+
+ol li a {
+  background: blue !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Bodega";
+  background-image: url("../img/bg_body.svg");
+  background-color: #414141;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  color: white;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  border-left: 3px solid #3f3f3f;
+  border-top: 3px solid #3f3f3f;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ff9d00;
+  border-bottom: 3px solid #ff9d00;
+  padding-bottom: 10px;
+}
+
+p {
+  color: white;
+}
+
+span {
+  color: #ff9d00;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background: linear-gradient(150deg, #FFFFFF
+55%, #333333
+45%);
+}
+
+nav {
+  font-size: 2.7rem;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+
+nav li {
+  padding: 15px;
+}
+
+main img {
+  max-width: 100%;
+}
+
+article {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+article a {
+  background-color: #ff9d00;
+  display: block;
+  text-align: center;
+  padding: 15px;
+}
+
+article p {
+  color: grey;
+}
+
+i {
+  color: white;
+}
+
+section > a {
+  display: block;
+  text-align: center;
+  margin: 50px;
+}
+
+video {
+  box-shadow: 0 0 25px;
+  max-width: 100%;
+}
+
+footer {
+  background-color: #414141;
+  margin: 30px;
+  text-align: center;
+  box-shadow: 0 0 5px black;
+  padding: 30px;
+}
+
+footer h3 {
+  color: white;
+  border: none;
+}
+
+footer a {
+  text-decoration: underline white;
+  display: inline-block;
+  margin: 20px;
+}
+
+footer p, footer small {
+  color: grey;
+}
+
+/* LICENCE */
+#licence {
+    display: block;
+    text-align: center;
+    padding: 25px;
+}
+
+#licence img {
+    width: 50px;
+}
+
+#licence a {
+	color: white;
+  margin: 0;
+}
+
+/* TABLETTE */
+@media screen and (min-width: 768px) {
+  body {
+    margin: 40px
+  }
+
+  header {
+    background: -moz-linear-gradient(130deg, white 0%, white 50%, #333 50%, #333 100%);
+    background: -webkit-linear-gradient(130deg, white 0%, white 50%, #333 50%, #333 100%);
+    background: linear-gradient(130deg, white 0%, white 50%, #333 50%, #333 100%);
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+  }
+
+  header img {
+    float: left;
+  }
+
+  h1, p {
+    text-align: center;
+  }
+
+  article img {
+    width: 100%;
+  }
+
+  article p {
+    text-align: center;
+  }
+}
+
+/* DEKSTOP */
+@media screen and (min-width: 1024px) {
+  body, footer {
+    margin: 0;
+  }
+
+  main {
+    margin: 0 200px 0 200px;
+  }
+
+  header img {
+    padding-left: 200px;
+  }
+
+  nav li {
+    padding-right: 200px;
+  }
+
+  h1 {
+    padding: 30px
+  }
+
+  article {
+    display: inline-block;
+    width: 19%;
+  }
+
+  section > a {
+    display: inline;
+  }
+
+  section:last-child article {
+    width: 50%;
+    background: none;
+  }
+
+  section:last-child p {
+    color: white;
+    text-align: left;
+  }
+
+  section:last-child a {
+    display: inline;
+    background: none;
+    padding: 50px;
+
+  }
+
+  video {
+    float: right;
+    width: 40%;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  footer {
+    margin-top: 180px;
+    box-shadow: 0 0 25px #353535;
+  }
+}

@@ -1,0 +1,248 @@
+@font-face {
+  font-family: "Kaushan";
+  src: url("../fonts/KaushanScript-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Playfair";
+  src: url("../fonts/PlayfairDisplay-Regular.ttf");
+}
+
+body {
+  font-size: 1em;
+  margin: 0;
+  color: #34495e;
+  line-height: 1.8em;
+}
+
+header {
+  background-image: url("../img/fond.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+header p {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 0;
+  padding: 20px;
+}
+
+nav, h1, h2, h3 {
+  font-family: "Kaushan";
+}
+
+p {
+  font-family: "Playfair";
+}
+
+h1 {
+  font-size: 4em;
+  color: white;
+  text-shadow: 1px 1px 16px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding-bottom: 300px;
+  padding-top: 80px;
+  margin-top: -30px;
+}
+
+h2 {
+  text-align: center;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 1.5em;
+  text-align: center;
+  padding: 30px;
+}
+
+nav a .fa {
+  display: block;
+}
+
+header nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 70px;
+}
+
+.promo {
+  text-transform: uppercase;
+}
+.clear {
+  clear: both;
+}
+
+.article1 img {
+  float: left;
+}
+
+.article2 img {
+  float: right;
+}
+
+.section1 article {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.section1 img {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.section1 article p {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#Nos {
+  background-image: url("../img/background_section.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Nos article {
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  padding: 50px;
+
+}
+
+#Nos article img {
+  max-width: 100%;
+}
+
+iframe {
+  width: 100%;
+}
+
+hr {
+  color: #dccedd;
+  width: 90%;
+}
+
+footer {
+  background-color: #8d6fd1;
+}
+
+/* CONTACT */
+/* Tableau */
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  font-size: 1em;
+  font-family: "PlayFair";
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 30px;
+}
+
+thead, caption {
+  font-family: "Kaushan";
+}
+
+caption {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+td {
+  border: 1px solid #cdcdcd;
+  text-align: center;
+}
+
+td:first-child {
+  text-align: left;
+}
+
+thead {
+  background-color: #c4a9de;
+  text-align: left;
+  font-size: 1.6em;
+  height: 70px;
+  color: white;
+}
+
+table a {
+  text-decoration: none;
+  color: #9463ce;
+}
+
+.color {
+  background-color: #f2f2f2;
+}
+
+/*Formulaire*/
+
+form {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+fieldset {
+  text-align: center;
+  padding: 40px;
+  margin: 30px;
+}
+
+input, select {
+  cursor: pointer;
+}
+
+select {
+  width: 95%;
+  text-align: left;
+}
+
+button {
+  background-color: #8a62c2;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin:0 auto;
+}
+
+/* INFOBULLE */
+
+.infobulle {
+  position: relative;  /* les .infobulle deviennent référents */
+  cursor: help;
+}
+
+/* on génère un élément :after lors du survol et du focus :*/
+
+.infobulle:hover::after,
+.infobulle:focus::after {
+  content: attr(aria-label);  /* on affiche aria-label */
+  position: absolute;
+  top: -2.4em;
+  left: 50%;
+  transform: translateX(-50%); /* on centre horizontalement  */
+  z-index: 1; /* pour s'afficher au dessus des éléments en position relative */
+  white-space: nowrap;  /* on interdit le retour à la ligne */
+  background-color: #cdcdcd;
+}
+
+/* LICENCE */
+#licence {
+    display: block;
+    text-align: center;
+    padding: 25px;
+}
+
+#licence img {
+    width: 50px;
+}

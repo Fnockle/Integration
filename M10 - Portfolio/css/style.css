@@ -1,0 +1,434 @@
+/* FONT FACE */
+@font-face {
+  font-family: "Bree";
+  src: url("../fonts/BreeSerif-Regular.ttf");
+}
+
+/*GLOBAL */
+html {
+  font-size: 62.5%;
+}
+
+header span {
+  display: block;
+}
+
+body {
+  font-size: 1.8rem;
+  background-image: url("../img/fond.png");
+}
+
+nav {
+  font-size: 2rem;
+}
+
+h2, h3, section a {
+  color: #f42a5c;
+}
+
+h1, header > a {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+  border-bottom: 2px solid rgba(239, 240, 242, 0.8);
+  padding-bottom: 20px;
+
+}
+
+input, textarea {
+  font-size: 1.6rem;
+}
+
+
+/* ANIMATION */
+/* Grow */
+.grow {
+  transition: All 2s ease;
+}
+
+.grow:hover {
+  transform: scale(1.3);
+}
+.bounce:hover {
+  animation: bounce 0.35s ease infinite alternate;
+}
+@keyframes bounce {
+    from {transform: translateY(0);}
+    to   {transform: translateY(-20px);}
+}
+/* Pulse */
+.pulse {
+ transform: perspective(1px) translateZ(0);
+ box-shadow: 0 0 1px transparent;
+}
+.pulse:hover {
+ animation-name: pulse;
+ animation-duration: 1s;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+}
+@keyframes pulse {
+ 25% {
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+ }
+ 75% {
+   -webkit-transform: scale(0.9);
+   transform: scale(0.9);
+ }
+  
+}
+
+/* HEADER */
+header a, i {
+  color: grey;
+}
+
+header img {
+  width: 160px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  padding: 5px 0 5px 0;
+}
+
+  header > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CAMEMBERT*/
+svg.pie {
+
+		  width: 250px;
+
+			height: 250px;
+
+			border-radius: 50%;
+
+			transform: rotate(-90deg);
+
+		}
+
+		circle {
+
+			stroke: #FFF;
+
+			stroke-opacity:0.8;
+
+		  stroke-width: 32;
+
+		}
+
+		circle.pie1 {
+
+		  fill: #F5AE28;
+
+		  stroke-dasharray: 20 100;
+
+		}
+
+		circle.pie2 {
+
+		  fill: #F48139;
+
+		  stroke-dasharray: 10 100;
+
+		}
+
+		circle.pie3 {
+
+		  fill: #F3453B;
+
+		  stroke-dasharray: 25 100;
+
+		}
+
+/* MAIN */
+main img {
+  max-width: 100%;
+}
+
+section:first-child {
+  background-image: url("../img/bg_header.png");
+  height: 1200px;
+  padding: 150px 20px 150px 20px;
+}
+
+section:first-child article {
+  color: white;
+  text-align: center;
+}
+
+section:first-child a {
+  color: white;
+  background-color: #f42a5c;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.svg, .services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section:nth-child(3) h2 {
+  text-align: center
+}
+
+main section:nth-child(3) p {
+  margin: 0 40px 0 40px;
+}
+
+main section:nth-child(2) h2{
+  text-align: center;
+}
+
+main section:nth-child(2) h3 {
+  font-size: 3rem;
+  color: grey;
+  margin: 0;
+}
+
+main section:nth-child(2) p {
+  color: grey;
+}
+
+main section:nth-child(3) i {
+  border: 2px solid grey;
+  border-radius: 100%;
+  padding: 25px;
+  background-color: #eff0f2;
+  opacity: 0.5;
+}
+
+main section:nth-child(3) p {
+  text-align: center;
+  color: grey;
+  margin-bottom: 90px;
+}
+
+main section:nth-child(4) {
+  margin: 28px;
+}
+
+main section:nth-child(4) h2 {
+  text-align: center;
+}
+
+main section:nth-child(4) p {
+  color: grey;
+}
+
+main section:nth-child(4) a {
+  margin-left: 30px;
+}
+
+main section:nth-child(4) a i {
+  color: #f42a5c;
+}
+
+main section:nth-child(5) {
+  margin: 40px
+}
+
+main section:nth-child(5) h2 {
+  text-align: center;
+}
+
+main section:nth-child(5) p {
+  color: grey;
+}
+
+form {
+  padding-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  margin-bottom: 12px;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 50px;
+  padding-left: 80px;
+  width: 250px;
+
+}
+
+form input:first-child {
+  background: url("../img/bg_form_name.svg");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: 10px;
+}
+
+form input:nth-child(2) {
+  background: url("../img/bg_form_mail.svg");
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 40px;
+}
+
+form input:nth-child(3) {
+  background: url("../img/bg_form_message.svg");
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 40px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.submit {
+  background-color: #f7285c;
+  color: white;
+}
+
+.reset {
+  background-color: grey;
+  color: white;
+}
+
+/* LICENCE */
+#licence {
+    display: block;
+    text-align: center;
+    padding: 25px;
+}
+
+#licence img {
+    width: 50px;
+}
+
+/* MEDIA */
+
+@media screen and (min-width: 768px) {
+
+  section:first-child {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 550px;
+    padding: 60px 0;
+  }
+  
+  section:first-child h1 {
+    font-size: 3.9rem;
+  }
+
+  .pie {
+    padding: 30px;
+  }
+  .svg, .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right {
+    float: right;
+    width: 30%;
+  }
+
+  .left {
+    float: left;
+    width: 30%;
+  }
+  
+  .input, .input1 {
+    width: 80%;
+  }
+  
+  button {
+    width: 50%;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  
+  .width {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px;
+  }
+  
+  header > a {
+    flex-direction: row;
+  }
+  
+  header ul {
+    flex-direction: row;
+  }
+  
+  header li {
+    padding: 40px 80px 0 80px;
+  }
+  
+  section:first-of-type {
+    background-position: center;
+  }
+  
+  section:first-of-type article {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  section:first-child p {
+    padding-bottom: 50px;  
+  }
+  
+  .svg, .services {
+    float:inline-end;
+    width:33.3%;
+  }
+  
+  .clear {
+    clear: both;  
+  }
+  
+  .svg:first-of-type {
+    order: 2;
+  }
+  
+  main section:nth-child(4), main section:last-child {
+    margin: 0 auto;
+  }
+  
+  form {
+    display: inline-block;
+    text-align: center;
+    margin-left: 250px;
+  }
+  
+  .input {
+  
+    width: 49.7%;
+  }
+  
+  .input1 {
+    width: 100%;
+  }
+  
+  button {
+    width: 10%;
+  }
+}

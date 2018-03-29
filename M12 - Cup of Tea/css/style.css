@@ -1,0 +1,1285 @@
+
+@font-face {
+ font-family: amaranth;
+ src: url(../fonts/Amaranth-Regular.ttf);
+}
+
+@font-face {
+ font-family: sans;
+ src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+h1, h2, h3{
+  font-family: amaranth;
+}
+
+p{
+  font-family: sans;
+}
+
+body{
+  margin:0;
+  background-color: #f2f2f2;
+
+
+}
+
+/* GLOBAL */
+
+
+
+a {
+
+  text-decoration: none;
+
+}
+
+
+
+.hidden {
+
+  display: none;
+
+}
+
+.clear {
+  clear: both;
+}
+
+/* HEADER */
+
+
+
+header {
+
+
+
+  background-image: url("../img/bg.jpg");
+
+
+
+  background-repeat: no-repeat;
+
+
+
+  background-size: cover;
+
+
+
+  background-position: center;
+
+    width: 100%;
+
+
+}
+
+
+header ul {
+
+
+
+  list-style: none;
+
+
+
+  padding: 0;
+
+
+
+}
+
+
+header p, a {
+
+
+
+  color: white;
+
+
+
+}
+
+header p, li {
+
+
+
+  opacity: 0.8;
+
+
+
+}
+
+
+header ul a {
+
+
+
+  text-transform: uppercase;
+
+
+
+  padding: 10px;
+
+
+
+}
+
+
+header > p {
+
+
+
+  margin-top: 0;
+
+
+
+  background-color: rgba(135, 158, 15, 0.8);
+
+
+
+  text-align: center;
+
+
+
+  padding: 5px;
+
+
+
+}
+
+
+
+header ul:first-child {
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+
+.basket {
+
+  order: -1;
+
+  box-shadow: 0px 0px 10px grey;
+
+  background-color: #96b011;
+
+  position: fixed;
+
+  left: -15px;
+
+  top: 70px;
+
+  border-radius: 50px;
+
+}
+
+
+
+.basket p {
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+
+header p .fa {
+
+
+
+  border: 1px solid white;
+
+
+
+  border-radius: 100%;
+
+
+
+  padding: 8px;
+
+
+
+  margin: 5px
+
+
+
+}
+
+
+header nav {
+
+
+
+  display: flex;
+
+
+
+  flex-direction: column;
+
+
+
+  align-items: center;
+
+
+
+  padding-top: 80px;
+
+
+
+}
+
+header ul:nth-child(2) li {
+
+  padding: 15px;
+
+
+
+}
+
+
+
+header ul:nth-child(2) li a:hover {
+
+
+
+  background-color: rgba(255, 255, 255, 0.2);
+
+
+
+}
+
+/* PAULO mobile page:about*/
+
+/* section1*/
+
+.about{
+  padding-left: 7%;
+  padding-right:7%;
+  padding-bottom: 5%;
+  padding-top:5%;
+  background-color: #fff;
+
+}
+
+.about h2{
+    color:#98b115;
+}
+
+
+.about img{
+  width: 100%;
+  max-width: 300px;
+}
+
+  .about h1{
+    color:#5f6871;
+  }
+
+  .about p{
+    color:#5f6871;
+  }
+
+
+
+. about h2{
+   /* position: relative;
+   padding-top: 30px;*/
+  color:#98b115;
+
+  }
+
+ /*
+. about h2:after:
+height:
+width
+background-color:
+content:"";
+
+
+
+  .about h2.border:before {
+   content: "";
+   display: block;
+   border-top: solid 1px #e0e0e0;
+   width: 90%;
+   position: absolute;
+   bottom: -20%;
+   margin-left: 78%;
+ }
+
+   .about h2.border span {
+   background: #fff;
+   padding: 0 20px;
+   position: relative;
+ }
+*/
+
+  .about .fondvert{
+    background-color: #eaefcf;
+    color:#5f6871;
+    padding:5%;
+    text-align: center;
+
+
+  }
+
+  .about .fondvert img{
+    width: 100px;
+  }
+
+  .about .fondvert article{
+    margin-top:15%;
+  }
+
+/* PAULO mobile page:thes*/
+
+.thes{
+  padding-bottom: 5%;
+  padding-top:5%;
+  background-color: #f2f2f2;
+}
+
+  .thes h2{
+  color:#9da712;
+
+}
+  .thes h3 a{
+    text-decoration: none;
+     color:#5f6871;
+}
+
+
+
+
+  .thes h3{
+  text-align: center;
+    margin-top:13%;
+}
+
+  .thes h4{
+    padding-bottom:8%;
+    font-size: 1.2em;
+    margin-top:4%;
+
+  }
+
+
+
+  .thes section{
+    margin-top:15%;
+    background-color:#fefefe;
+    padding:10%;
+
+  }
+
+  .thes article{
+    text-align: center;
+  }
+
+  .thes h3, p, h4{
+    color:#5f6871;
+
+  }
+
+  .thes h3{
+    font-weight: normal;
+  }
+
+
+  .thes img{
+    width:100%;
+
+  }
+
+  .thes p a{
+    text-decoration: none;
+    background-color: #b09067;
+    padding:6%;
+    color:rgba(255,255,255, 0.75)
+  }
+
+  .thes article p:first-of-type{
+    margin:0;
+  }
+
+
+/* PAULO mobile page:product*/
+.product{
+
+    padding-left: 7%;
+
+  padding-right:7%;
+
+  padding-bottom: 5%;
+
+  padding-top:5%;
+
+  background-color: #fefefe;
+
+}
+
+
+
+.product section {
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+}
+
+
+
+.product h1, h2, h3{
+
+  color:#5f6871;
+
+}
+
+
+
+.product h1{
+
+  font-size:1.8em;
+
+  font-weight: normal;
+
+}
+
+
+
+.product h2{
+
+  font-size: 1.2em;
+
+  font-weight: normal;
+
+}
+
+
+
+.product h4{
+
+  color:#abbb1d;
+
+  font-weight: normal;
+
+  margin-top: 30px;
+
+}
+
+
+
+.product h3{
+
+  margin-bottom:100px;
+
+}
+
+
+
+.product .fa:active{
+
+  color:#fcd808;
+
+}
+
+
+
+.product .fa{
+
+  color:gray;
+
+}
+
+
+
+.product .fa-heart{
+
+  color:#d78d8c;
+
+}
+
+
+
+.product .section1{
+
+  text-align: center;
+
+}
+
+
+
+.product a{
+
+  text-decoration: none;
+
+      text-decoration: none;
+
+    background-color: #b09067;
+
+    padding:20px;
+
+    color:rgba(255,255,255, 0.75);
+
+
+
+}
+
+
+
+.product .p3, .p4{
+
+  font-weight: bold;
+
+}
+
+
+
+
+/* FOOTER GLOBAL*/
+
+footer {
+
+    text-align: center;
+
+    background-image: url(../img/bg.jpg);
+
+    background-repeat: no-repeat;
+
+    background-size:auto;
+
+    color: white;
+
+    background-position:bottom;
+
+    background-color:#96b011;
+
+
+
+}
+
+
+
+footer a {
+
+    text-decoration: none;
+
+    color: white;
+
+}
+
+footer nav a {
+
+    opacity: 0.8;
+
+}
+
+
+
+footer h2 {
+
+    padding-top: 50px;
+  color:white;
+  text-transform: uppercase;
+  opacity: 0.9;
+
+}
+
+
+
+ul {
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+footer ul li {
+
+    list-style: none;
+
+    padding: 2%;
+
+    box-sizing: border-box;
+
+}
+
+
+
+footer nav.infos .fa {
+
+    display: block;
+
+    padding-bottom: 10px;
+
+}
+
+
+
+footer nav.infos ul {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    padding: 30px 5% 30px 5%;
+
+    background-color: rgba(135, 158, 15, 0.6);
+
+}
+
+
+
+footer nav.infos ul li {
+
+    text-transform: uppercase;
+
+    flex-basis: 50%;
+
+    text-align: center;
+
+
+
+}
+
+
+
+footer .navcentrale {
+
+    padding-bottom: 50px;
+
+
+
+}
+
+
+
+footer img {
+
+    width: 80px;
+
+    max-width: 100%;
+
+}
+
+
+
+#license {
+
+    padding: 30px 0 30px 0;
+
+    background-color: rgba(135, 158, 15, 0.6);
+
+}
+
+
+
+#license p{
+
+  padding:0 20% 0 20%;
+
+}
+
+
+
+
+/* TABLETTE */
+@media screen and (min-width: 768px){
+
+/* HEADER*/
+
+/* HEADER*/
+
+
+
+.hidden {
+
+
+
+    display: inline;
+
+
+
+  }
+
+
+
+  header {
+
+
+
+    position: relative;
+
+
+
+    height: 230px;
+
+
+
+    background-image: url("../img/ribbon.svg"), url("../img/bg.jpg");
+
+
+
+    background-position: right top, bottom;
+
+
+
+    background-size: 8%, cover;
+
+
+
+  }
+
+
+
+  header nav {
+
+    padding-top: 20px;
+
+  }
+
+
+
+  header > p {
+
+
+
+    background: linear-gradient(-135deg, rgba(135, 158, 15, 0) 7%, rgba(135, 158, 15, 0.8) 0%);
+
+    background-repeat: no-repeat;
+
+    background-position: right;
+
+  }
+
+
+
+  header ul:first-child {
+
+    display: flex;
+
+    flex-direction: row;
+
+  }
+
+
+
+  .basket {
+
+    position: static;
+
+    box-shadow: none;
+
+    order:0;
+
+    background-color: rgba(255, 255, 255, 0);
+
+    margin-top: 23px;
+
+    padding-left: 270px;
+
+  }
+
+
+
+
+
+
+
+  header ul > a {
+
+
+
+    display: block;
+
+
+
+    text-align: left;
+
+
+
+  }
+
+
+
+
+
+  header ul:nth-child(2) {
+
+
+
+    display: flex;
+
+
+
+    justify-content: space-around;
+
+
+
+  }
+
+/* ABOUT (tablette)  */
+
+  .about{
+  padding-left: 3.5%;
+  padding-right:3.5%;
+  margin-bottom: 5%;
+  padding-top:5%;
+  background-color: #ffffff;
+
+}
+
+  .about section:first-of-type article:nth-of-type(1) img{
+    float: left;
+    padding:2%;
+     width: 100%;
+   max-width: 600px;
+  }
+
+    .about section:first-of-type article:nth-of-type(2) img{
+    float: right;
+    padding:2%;
+
+    width: 100%;
+   max-width: 600px;
+
+  }
+
+   .about .fondvert{
+    background-color: #eaefcf;
+    color:#5f6871;
+    padding:1%;
+    text-align: center;
+
+
+  }
+
+  .about .fondvert img{
+    width: 100px;
+  }
+
+  .about .fondvert article{
+    margin-top:5%;
+  }
+
+  .about h2{
+    position: relative;
+   padding-top: 30px
+
+  }
+
+
+  .about h2.border:before {
+   content: "";
+   display: block;
+   border-top: solid 1px #e0e0e0;
+   width: 90%;
+   position: absolute;
+   bottom: 17%;
+   margin-left: 10%;
+ }
+
+   .about h2.border span {
+   background: #fff;
+   padding: 0 20px;
+   position: relative;
+ }
+
+
+  /* PAGE THES */
+
+
+
+  main.thes {
+
+    padding-top:5px;
+
+  }
+
+
+
+  main.thes section {
+
+    margin-top: 25px;
+
+    padding-left: 25px;
+
+    padding-right: 25px;
+
+  }
+
+
+
+  main.thes img {
+
+    max-width: 40%;
+
+  }
+
+
+
+  main.thes h2 {
+
+    margin-left: 15px;
+
+  }
+
+
+
+  main.thes p {
+
+    line-height: 25px;
+
+  }
+
+
+
+  main.thes article a {
+
+    padding: 20px;
+
+  }
+
+
+
+  main.thes h4 {
+
+    padding-bottom: 10px;
+
+  }
+
+/* PRODUCT */
+
+  .product .section1 {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+
+
+    }
+
+
+
+  .left{
+
+    text-align: left;
+
+    width:50%;
+
+
+
+  }
+
+
+
+  .right{
+
+  text-align: right;
+
+  width: 50%;
+
+  }
+
+
+
+  .left img{
+
+    padding-left: 100px;
+
+  }
+
+
+
+/* FOOTER*/
+
+
+
+    footer nav.infos ul {
+
+        flex-wrap: nowrap;
+
+    }
+
+    .flex {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        flex-wrap: wrap;
+
+    }
+
+    footer .navcentrale nav {
+
+        flex-basis: 33%;
+
+    }
+
+
+}
+
+
+
+
+/* DESKTOP*/
+@media screen and (min-width:1024px){
+
+  /* HEADER */
+
+
+
+    header {
+
+      background-color: #96b011;
+
+      background-position: right top, center;
+
+      background-size: 8%, contain;
+
+    }
+
+  header ul:nth-child(2) li{
+
+    padding: 20px 50px 50px 50px;
+
+  }
+
+  /* ABOUT (Paulo) */
+
+  .about{
+  margin-left: 13%;
+  margin-right:13%;
+  margin-bottom: 5%;
+  padding:5% 2.5% 2.5% 2.5%;
+  background-color: #ffffff;
+
+}
+
+  .about h1{
+    font-weight: normal;
+    font-size:1.5em;
+  }
+
+  .about p{
+    font-size:0.95em;
+    color:#686a81;
+  }
+
+   .about h2{
+    font-weight: normal;
+     font-size:1.1em;
+     position: relative;
+   padding-top: 30px
+
+  }
+
+
+  .about h2.border:before {
+   content: "";
+   display: block;
+   border-top: solid 1px #e0e0e0;
+   width: 90%;
+   position: absolute;
+   bottom: 17%;
+   margin-left: 10%;
+ }
+
+   .about h2.border span {
+   background: #fff;
+   padding: 0 20px;
+   position: relative;
+ }
+
+  .about section:first-of-type article:nth-of-type(1) img{
+    float: left;
+    padding:2% 2% 1% 2%;
+     width: 100%;
+   max-width: 310px;
+    max-height: 200px
+  }
+
+    .about section:first-of-type article:nth-of-type(2) img{
+    float: right;
+    padding:2% 2% 1% 2%;
+      width: 100%;
+   max-width: 310px;
+    max-height: 200px;
+
+  }
+
+   .about .fondvert{
+    background-color: #eaefcf;
+    color:#5f6871;
+    padding:6%;
+    text-align: center;
+     display: flex;
+     flex-wrap:wrap;
+
+  }
+
+
+
+
+
+
+
+  .about h3{
+    font-size: 1.1em;
+  }
+
+  .about .fondvert img{
+    width: 100px;
+  }
+
+  .about .fondvert article{
+    flex-basis: 30%;
+    padding-left:3.3%
+
+  }
+
+
+  /* PAGE THES */
+
+  main.thes section {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    margin-top: 25px;
+
+  }
+
+
+
+  main.thes section {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    padding-top: 20px;
+
+    padding-bottom: 30px;
+
+  }
+
+
+
+  main.thes section > p, main.thes section > h2 {
+
+    flex-direction: column;
+
+    flex-basis: 200%;
+
+    padding-left: 150px;
+
+  }
+
+
+
+  main.thes section article {
+
+    flex-basis: 33%;
+
+  }
+
+
+
+  main.thes .section1 {
+
+    background-image: url("../img/tea/1.jpg");
+
+    background-repeat: no-repeat;
+
+    background-position: 15px 45px;
+
+  }
+
+
+
+  main.thes .section2 {
+
+    background-image: url("../img/tea/2.jpg");
+
+    background-repeat: no-repeat;
+
+    background-position: 15px 45px;
+
+  }
+
+
+
+  main.thes .section3 {
+
+    background-image: url("../img/tea/3.jpg");
+
+    background-repeat: no-repeat;
+
+    background-position: 15px 45px;
+
+  }
+
+
+
+  main.thes .section4 {
+
+    background-image: url("../img/tea/4.jpg");
+
+    background-repeat: no-repeat;
+
+    background-position: 15px 45px;
+
+  }
+
+
+
+  main.thes .section5 {
+
+    background-image: url("../img/tea/5.jpg");
+
+    background-repeat: no-repeat;
+
+    background-position: 15px 45px;
+
+  }
+
+/* PRODUCT */
+
+  .product{
+    margin-left:20%;
+    margin-right:20%;
+    padding: 2%;
+  }
+
+  .product section:last-of-type{
+    text-align: left;
+
+  }
+
+  /* HEADER */
+
+  header ul:first-child li:nth-child(2) {
+    padding-left: 720px;
+  }
+
+
+
+}
